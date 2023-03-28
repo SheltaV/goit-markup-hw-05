@@ -29,7 +29,7 @@
           >
           <ul class="header-list list">
             <li>
-              <a class="header-link link" href="./index.html">Studio</a>
+              <a class="header-link link current" href="./index.html">Studio</a>
             </li>
             <li>
               <a class="header-link link" href="./portfolio.html">Portfolio</a>
@@ -59,7 +59,9 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-btn" type="button">Order Service</button>
+          <button class="hero-btn" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -407,28 +409,28 @@
           <ul class="footer-logo-list list">
             <li class="footer-item">
               <a class="footer-link link" href="">
-                <svg class="footer-icon" width="16" height="16">
+                <svg class="footer-icon" width="24" height="24">
                   <use href="./images/icons-svg.svg#icon-team-svg-1"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-item">
               <a class="footer-link link" href="">
-                <svg class="footer-icon" width="16" height="16">
+                <svg class="footer-icon" width="24" height="24">
                   <use href="./images/icons-svg.svg#icon-team-svg-2"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-item">
               <a class="footer-link link" href="">
-                <svg class="footer-icon" width="16" height="16">
+                <svg class="footer-icon" width="24" height="24">
                   <use href="./images/icons-svg.svg#icon-team-svg-3"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-item">
               <a class="footer-link link" href="">
-                <svg class="footer-icon" width="16" height="16">
+                <svg class="footer-icon" width="24" height="24">
                   <use href="./images/icons-svg.svg#icon-team-svg-4"></use>
                 </svg>
               </a>
@@ -437,5 +439,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button" type="button" data-modal-close>
+          <svg class="modal-close" width="8" height="8">
+            <use href="../images/icons-svg.svg#icon-close-black-svg"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
